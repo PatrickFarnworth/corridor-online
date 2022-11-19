@@ -1,3 +1,3 @@
-# quoridor-online
+# corridor-online
 
-Online implementation of quoridor really
+Online implementation of the corridor game really
