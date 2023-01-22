@@ -5,10 +5,12 @@ import { NgxsModule } from '@ngxs/store';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GameScreenComponent } from './screens/game-screen/game-screen.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GameScreenComponent
   ],
   imports: [
     BrowserModule,
