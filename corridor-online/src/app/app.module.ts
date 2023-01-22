@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GameScreenComponent } from './screens/game-screen/game-screen.component';
+import { GameGridComponent } from './components/game-grid/game-grid.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GameScreenComponent
+    GameScreenComponent,
+    GameGridComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,11 @@
+<div 
+    *ngFor="let row of gridElements"
+    class="grid-row"
+>
+    <div 
+        *ngFor="let gridElement of row"
+        class="yeah"
+    >
+        {{gridElement.type}}, {{gridElement.status}}
+    </div>
+</div>
