@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GameScreenComponent } from './screens/game-screen/game-screen.component';
 import { GameGridComponent } from './components/game-grid/game-grid.component';
+import { TextInputComponent } from './components/text-input/text-input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GameScreenComponent,
-    GameGridComponent
+    GameGridComponent,
+    TextInputComponent
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,14 @@
-<div 
-    *ngFor="let row of gridElements"
-    class="grid-row"
->
+<div class="grid">
     <div 
-        *ngFor="let gridElement of row"
-        class="yeah"
+        *ngFor="let row of gridElements; index as i;"
+        class="grid-row"
     >
-        {{gridElement.type}}, {{gridElement.status}}
+        <button
+            *ngFor="let gridElement of row; index as j;"
+            class="{{gridElement.type}} {{gridElement.status}}"
+            (click)="onClick(i,j)"
+        >
+            o
+        </button>
     </div>
 </div>

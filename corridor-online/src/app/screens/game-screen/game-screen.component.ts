@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Store } from '@ngxs/store';
+import { ResetGame } from 'src/app/state/game.action';
 
 @Component({
   selector: 'app-game-screen',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class GameScreenComponent {
 
+  constructor(private store: Store) { }
+
+  startGame() {
+    this.store.dispatch(new ResetGame());
+    console.log('yeah');
+  }
 }
