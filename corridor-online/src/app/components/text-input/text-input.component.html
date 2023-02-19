@@ -1,1 +1,10 @@
-<p>text-input works!</p>
+<h1>Text Input</h1>
+<h2>Temporary Feature for Testing</h2>
+<p>Give commands in the form 
+    &lt type &gt &lt pos &gt (&lt orient &gt)
+</p>
+<form (ngSubmit)="submit()">
+    <label for="moveCode">Move Code:</label>
+    <input type="text" id="moveCode" name="moveCode" [(ngModel)]="moveCode"/>
+    <input type="submit" value="Submit">
+</form>

@@ -9,6 +9,8 @@ import { GameScreenComponent } from './screens/game-screen/game-screen.component
 import { GameGridComponent } from './components/game-grid/game-grid.component';
 import { TextInputComponent } from './components/text-input/text-input.component';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,8 @@ import { TextInputComponent } from './components/text-input/text-input.component
     BrowserModule,
     AppRoutingModule,
     NgxsModule.forRoot([]),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

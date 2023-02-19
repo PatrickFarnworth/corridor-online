@@ -18,7 +18,12 @@ export class GameGridComponent {
 
   constructor(private store: Store) {
     this.game$ = this.store.select(GameSelectors.getActiveGame).pipe(
-      tap(game => console.log(game))
+      tap(game => {
+        console.log('Active player: '+game.currentPlayerIndex);
+        let lastMoveIndex = game.moves.length - 1;
+        console.log('Last move: ');
+        console.log(game.moves[lastMoveIndex]);
+      })
     );
 
     this.game$.subscribe()
